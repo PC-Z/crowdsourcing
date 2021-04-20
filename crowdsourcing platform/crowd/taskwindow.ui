@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TaskWindow</class>
+ <widget class="QMainWindow" name="TaskWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="mainstacked">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>571</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="choosepage0">
+     <widget class="QPushButton" name="postButton">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>350</y>
+        <width>112</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Post Task</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="leadButton">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>350</y>
+        <width>112</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Lead Task</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tranButton">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>350</y>
+        <width>141</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Translate Tasks</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="searchEdit">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>60</y>
+        <width>113</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search...</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="searchpage1">
+     <widget class="QPushButton" name="backButton01">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>430</y>
+        <width>112</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="postpage2">
+     <widget class="QLabel" name="postlabel">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>30</y>
+        <width>81</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Post Task</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bookButton1">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>300</y>
+        <width>121</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose Book</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="coverButton">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>240</y>
+        <width>121</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choose Cover</string>
+      </property>
+     </widget>
+     <widget class="QPlainTextEdit" name="taskintroEdit">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>60</y>
+        <width>341</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="plainText">
+       <string>Edit Introduction...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="pixlabel_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>90</y>
+        <width>111</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>pix</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>440</y>
+        <width>276</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="paymentlabel">
+         <property name="text">
+          <string>  任务金额  </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="paymentEdit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="backButton02">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>430</y>
+        <width>112</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>360</y>
+        <width>276</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="Tcirclelabel">
+         <property name="text">
+          <string>  任务周期  </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="TcircleEdit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>400</y>
+        <width>240</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>报名截止时间</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="dateEdit"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

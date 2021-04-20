@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>photouserini.jpg</file>
+        <file>choose.png</file>
+        <file>favorite.png</file>
+        <file>notchoose.png</file>
+        <file>notfavorite.png</file>
+        <file>bookcover.jpg</file>
+        <file>logo/loginlogo.png</file>
+        <file>logo/regislogo.png</file>
+        <file>logo/serverlogo.png</file>
+        <file>logo/attention.jpg</file>
+    </qresource>
+</RCC>

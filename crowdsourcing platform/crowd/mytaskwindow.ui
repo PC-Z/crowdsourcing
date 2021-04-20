@@ -1,0 +1,1733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mytaskWindow</class>
+ <widget class="QMainWindow" name="mytaskWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="taskstacked">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>30</y>
+      <width>571</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="mytaskpage">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>551</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>549</width>
+         <height>429</height>
+        </rect>
+       </property>
+       <widget class="QTableView" name="task_tableview">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>531</width>
+          <height>411</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="checkmypostpage">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>561</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>301</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="taskstatelabel">
+           <property name="text">
+            <string>Tasestate</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="taskstateread">
+           <property name="text">
+            <string>TaskState</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="backbutton">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>410</y>
+          <width>112</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>281</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>information</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget_12">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>120</y>
+           <width>249</width>
+           <height>26</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
+          <item>
+           <widget class="QLabel" name="signupdeadline">
+            <property name="text">
+             <string>Sign Deadline</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="signupdeadlineedit"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_14">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>241</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QLabel" name="circletimelabel">
+            <property name="text">
+             <string>Task Period </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="circletimeedit"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>241</width>
+           <height>29</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_18">
+            <item>
+             <widget class="QLabel" name="taskpaymentlabel">
+              <property name="text">
+               <string>Task Payment</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="taskpaymentedit"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="yuanlabel">
+            <property name="text">
+             <string>元</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>0</y>
+          <width>211</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>user</string>
+        </property>
+        <widget class="QLabel" name="translatelaber">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>220</y>
+           <width>81</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Translater</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="leaderlabel">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>54</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Leader</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="leadersignupbutton">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>20</y>
+           <width>71</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Check</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="transignupbutton">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>90</y>
+           <width>71</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Check</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>110</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QLabel" name="p_transignupabel">
+            <property name="text">
+             <string>transignup</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="p_transignnum">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>110</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="p_leadersignuplabel">
+            <property name="text">
+             <string>leadsignup</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="p_leadersignnum">
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="p_leaderidentity">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>180</y>
+           <width>101</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>leaderidentity</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="p_checkleaderbutton">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>180</y>
+           <width>71</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Check</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="p_checktranbutton">
+         <property name="geometry">
+          <rect>
+           <x>130</x>
+           <y>260</y>
+           <width>71</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Check</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="p_translaters">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>260</y>
+           <width>111</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Translater</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>410</y>
+          <width>235</width>
+          <height>36</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QPushButton" name="finishtaskbutton">
+           <property name="text">
+            <string>FinishTask</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="paytaskbutton">
+           <property name="text">
+            <string>PayTask</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="checktaskstatebutton">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>70</y>
+          <width>112</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Check</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="checkmyleadpage">
+     <widget class="QPushButton" name="l_gettaskbutton">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>450</y>
+        <width>112</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TaskPay</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="l_backbutton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>450</y>
+        <width>112</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>281</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>information</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>241</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_20">
+        <item>
+         <widget class="QLabel" name="circletimelabel_2">
+          <property name="text">
+           <string>Task Period </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="l_circletimeedit"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>241</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_21">
+          <item>
+           <widget class="QLabel" name="taskpaymentlabel_2">
+            <property name="text">
+             <string>Task Payment</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="l_taskpaymentedit"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>元</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>249</width>
+         <height>26</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_19">
+        <item>
+         <widget class="QLabel" name="signupdeadline_2">
+          <property name="text">
+           <string>Sign Deadline</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QDateEdit" name="l_signupdeadlineedit"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>30</y>
+        <width>211</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>user</string>
+      </property>
+      <widget class="QPushButton" name="l_transignupbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>90</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>110</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="l_transignupabel">
+          <property name="text">
+           <string>transignup</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="l_transignnum">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="l_posterlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>150</y>
+         <width>54</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Poster</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="l_tranlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>90</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Translater</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="l_posterread">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>101</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>posteridentity</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="l_checkposterbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>180</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="l_trannum">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>91</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Translaternumber</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="l_checktranbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>250</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="l_submitbutton">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>450</y>
+        <width>112</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>173</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="l_subtasklabel">
+         <property name="text">
+          <string>Tasestate</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="l_subtasknum">
+         <property name="text">
+          <string>TaskState</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>260</y>
+        <width>114</width>
+        <height>122</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="l_setddlbutton">
+         <property name="text">
+          <string>Setddl</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="l_postsubtaskbutton">
+         <property name="text">
+          <string>PostSub</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="l_checksubbutton">
+         <property name="text">
+          <string>CheckSub</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <zorder>layoutWidget</zorder>
+     <zorder>l_gettaskbutton</zorder>
+     <zorder>l_backbutton</zorder>
+     <zorder>groupBox_3</zorder>
+     <zorder>groupBox_5</zorder>
+     <zorder>l_submitbutton</zorder>
+     <zorder>layoutWidget</zorder>
+    </widget>
+    <widget class="QWidget" name="checkmytranpage">
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>211</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>user</string>
+      </property>
+      <widget class="QLabel" name="t_posterlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>54</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Poster</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="t_tranlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>90</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Translater</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="t_posterread">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>101</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>posteridentity</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="t_checkposterbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>70</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="t_trannum">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>91</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Translaternumber</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="t_checktranbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>250</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="t_checkleaderbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>160</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="t_leaderlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>54</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>leader</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="t_leaderread">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>101</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>leaderidentity</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>281</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>information</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget_34">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>241</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_57">
+        <item>
+         <widget class="QLabel" name="circletimelabel_7">
+          <property name="text">
+           <string>Task Period </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="t_circletimeedit"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_35">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>241</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_58">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_59">
+          <item>
+           <widget class="QLabel" name="taskpaymentlabel_7">
+            <property name="text">
+             <string>Task Payment</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="t_taskpaymentedit"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_39">
+          <property name="text">
+           <string>元</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_37">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>173</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_61">
+       <item>
+        <widget class="QLabel" name="l_subtasklabel_5">
+         <property name="text">
+          <string>Tasestate</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="l_subtasknum_5">
+         <property name="text">
+          <string>TaskState</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>330</y>
+        <width>284</width>
+        <height>107</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" rowspan="2" colspan="2">
+        <widget class="QPushButton" name="t_entermytaskbutton">
+         <property name="text">
+          <string>MyTask</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" rowspan="2">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="3" rowspan="2" colspan="2">
+        <widget class="QPushButton" name="t_othertaskbutton">
+         <property name="text">
+          <string>Other'sTask</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" rowspan="2">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="0" rowspan="2" colspan="2">
+        <widget class="QPushButton" name="t_backbutton">
+         <property name="text">
+          <string>Back</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3" rowspan="2" colspan="2">
+        <widget class="QPushButton" name="t_gettaskbutton">
+         <property name="text">
+          <string>TaskPay</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="checkleadervisitorpage">
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>40</y>
+        <width>211</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>user</string>
+      </property>
+      <widget class="QLabel" name="vl_posterlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>54</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Poster</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vl_tranlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>151</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SignupTranslater</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vl_posterread">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>101</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>posteridentity</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="vl_checkposterbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>70</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vl_signuptrannum">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>91</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Trannum</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="vl_signuptranbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>250</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Signup</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="vl_signupleader">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>160</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Signup</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vl_leaderlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>111</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SignupLeader</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vl_signupleadernum">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>101</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>posternum</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTextBrowser" name="vl_bookintrobrowser">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>271</width>
+        <height>301</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_16">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>241</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_22">
+       <item>
+        <widget class="QLabel" name="vl_circletimelabel">
+         <property name="text">
+          <string>Task Period </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="vl_circleread"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_17">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>110</y>
+        <width>249</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_23">
+       <item>
+        <widget class="QLabel" name="vl_signupdeadlinelabel">
+         <property name="text">
+          <string>Sign Deadline</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="vl_signupdeadlineread"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>241</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_12">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_24">
+         <item>
+          <widget class="QLabel" name="vl_taskpaymentlabel">
+           <property name="text">
+            <string>Task Payment</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="vl_taskpaymentread"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>元</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="checktranvisitorpage">
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>50</y>
+        <width>211</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>user</string>
+      </property>
+      <widget class="QLabel" name="vt_posterlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>54</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Poster</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vt_tranlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>151</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SignupTranslater</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vt_posterread">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>101</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>posteridentity</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="vt_checkposterbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>70</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vt_signuptrannum">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>91</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Trannum</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="vt_signuptranbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>250</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Signup</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="vt_checkleader">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>160</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vt_leaderlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>111</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>SignupLeader</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="vt_leaderread">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>101</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>posternum</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTextBrowser" name="vt_bookintrobrowser">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>160</y>
+        <width>271</width>
+        <height>301</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_18">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>80</y>
+        <width>241</width>
+        <height>27</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_25">
+       <item>
+        <widget class="QLabel" name="vt_circletimelabel">
+         <property name="text">
+          <string>Task Period </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="vt_circleread"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>241</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_26">
+         <item>
+          <widget class="QLabel" name="vt_taskpaymentlabel">
+           <property name="text">
+            <string>Task Payment</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="vt_taskpaymentread"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_18">
+         <property name="text">
+          <string>元</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_19">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>120</y>
+        <width>249</width>
+        <height>26</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_27">
+       <item>
+        <widget class="QLabel" name="vt_signupdeadlinelabel">
+         <property name="text">
+          <string>Sign Deadline</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="vt_signupdeadlineread"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="checkfinishvisitorpage">
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>50</y>
+        <width>211</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>GroupBox</string>
+      </property>
+      <widget class="QLabel" name="v_posterlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>54</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Poster</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="v_tranlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>90</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Translater</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="v_posterread">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>101</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>posteridentity</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="v_checkposterbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>70</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="v_trannum">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>91</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Translaternumber</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="v_checktranbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>250</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="v_checkleaderbutton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>160</y>
+         <width>71</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Check</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="v_leaderlabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>54</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>leader</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="v_leaderread">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>101</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>leaderidentity</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTextBrowser" name="v_bookintrobrowser">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>271</width>
+        <height>301</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>161</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>task</string>
+    </property>
+    <widget class="QLabel" name="bookcoverlabel">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>91</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>  bookcover</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="getbookbutton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>440</y>
+       <width>112</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Get Book</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="translatetype">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>141</width>
+       <height>81</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="tasknamelabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="booknamelabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="posteridentity">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
